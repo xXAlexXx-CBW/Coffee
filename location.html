@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+
+<html> 
+	<head> 
+		<title> World coffee </title>
+
+		<link rel="stylesheet" type="text/css" href="styles/mainstyles.css">
+
+	</head>
+
+	<body>
+        
+        <div id="banner"> 
+         
+        <center>
+    <img src=images/Logo.png>
+    </center>
+         </div>
+    <div id="nav">
+    
+        <nav>
+      <ul>
+
+ <li>      <a href="Index.html">Home</a>       </li>
+ <li>      <a href="About.html">About Us</a>       </li>
+ <li>      <a href="Location.html">Our location</a>     </li>
+        </ul>
+      </nav>
+        
+    </div>
+        
+   <h1 align="center">We are located at this address:</h1>
+<hr>
+        
+        <!-- This script from the internet-->
+<div id="map" style="width:100%;height:400px;"></div>
+
+<script>
+function myMap() {
+  var mapCanvas = document.getElementById("map");
+  var mapOptions = {
+    center: new google.maps.LatLng(51.5, -0.2), zoom: 10
+  };
+  var map = new google.maps.Map(mapCanvas, mapOptions);
+}
+</script>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDR8P72HMX3zllKeeZt8X89dJWMEu0LSX8&callback=myMap" async defer></script>
+        
+        <hr>
+         <!--Тут расписание-->
+   
+        <center>
+        <table>
+   <tr><th>Monday</th><th>8:30 am - 7:00 pm</th></tr>
+   <tr><td>Tuesday</td><td>8:30 am - 7:00 pm</td></tr>
+    <tr><td>Wednesday</td><td>8:30 am - 7:00 pm</td></tr>
+            <tr><td>Thursday</td><td>8:30 am - 7:00 pm</td></tr>
+            <tr><td>Friday</td><td>8:30 am - 7:00 pm</td></tr>
+            <tr><td>Saturday</td><td>9:00 am - 6:00 pm</td></tr>
+            <tr><td>Sunday</td><td>Closed</td></tr>
+  </table>
+        </center>
+        
+        <hr>
+        <div id="footer">
+
+      <center>
+        <img src="images/social.png" width="249" height="55" alt=""/>
+      </center>
+        <h2 align="center"><a href="mailto:Melnik.A015@student.cbsd.org">Mail (Melnik.A015@student.cbsd.org)</a> </h2>
+          
+     <center> <h6>(c) Yami 2020-2022.</h6> </center>
+    <center> <h6>All rights reserved.</h6> </center>
+        
+    </div>
+    </body>
+    </html>

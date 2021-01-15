@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+
+<html> 
+	<head> 
+		<title> World coffee </title>
+
+		<link rel="stylesheet" type="text/css" href="styles/mainstyles.css">
+
+	</head>
+
+	<body>
+<div id="main">
+     <div id="banner"> 
+         
+        <center>
+    <img src=images/Logo.png>
+    </center>
+         </div>
+    <div id="nav">
+    
+        <nav>
+      <ul>
+
+ <li>      <a href="Index.html">Home</a>       </li>
+ <li>      <a href="About.html">About Us</a>       </li>
+ <li>      <a href="Location.html">Our location</a>     </li>
+        </ul>
+      </nav>
+        
+    </div>
+    
+    <b> <h1 align=center>Welcome to the World Coffee website. This is a store where you can buy any coffee from anywhere in the world.</h1>  </b>
+    
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style> 
+* {box-sizing: border-box;}
+body {font-family: Verdana, sans-serif;}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 850px;
+  position: relative;
+  margin: auto;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+</style>
+
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <img src="images/cofe3.jpg" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <img src="images/cofe2.jpg" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <img src="images/Cofe1.jpg" style="width:100%">
+</div>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+       slides[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}    
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+</script>
+    
+    <center>
+    <h2>"Coffee is an invigorating, energizing strong drink made from the fruit of the coffee tree. The first samples of this drink belong to the ancient monks who found wild berries on one of the bushes. Over time, the monks noticed that brewed coffee beans helped to eliminate drowsiness, which was attractive for night prayers."</h2>
+
+<h2>"What is a coffee drink? This is a large number of different ingredients added to classic        black coffee, which create amazing cocktails for all tastes. In the modern world, everyone      can try absolutely any kind - natural espresso or aromatic latte, less strong Americano or      delicious lungo in terms of aromatic composition."</h2>
+    </center>
+    
+    <hr>
+
+    
+    <!--Тут расписание-->
+    <center>
+        <table>
+   <tr><th>Monday</th><th>8:30 am - 7:00 pm</th></tr>
+   <tr><td>Tuesday</td><td>8:30 am - 7:00 pm</td></tr>
+    <tr><td>Wednesday</td><td>8:30 am - 7:00 pm</td></tr>
+            <tr><td>Thursday</td><td>8:30 am - 7:00 pm</td></tr>
+            <tr><td>Friday</td><td>8:30 am - 7:00 pm</td></tr>
+            <tr><td>Saturday</td><td>9:00 am - 6:00 pm</td></tr>
+            <tr><td>Sunday</td><td>Closed</td></tr>
+  </table>
+        </center>
+    
+    
+    
+    <center>
+    <p>If you want to order home delivery, </p>
+    </center>
+    
+    <div id="nav">
+    
+        <nav>
+      <ul>
+
+ <li>     <ul>
+    <a href="Order.html"><big><big><big><big><big><big><big><big>Press Here</big></big></big></big></big></big></big></big></a>       
+        </ul>     
+        </ul>
+      </nav>
+        
+    </div>
+    
+    
+        <hr>
+    <div id="footer">
+
+      <center>
+        <img src="images/social.png" width="249" height="55" alt=""/>
+      </center>
+        <h2 align="center"><a href="mailto:Melnik.A015@student.cbsd.org">Mail (Melnik.A015@student.cbsd.org)</a> </h2>
+          
+     <center> <h6>(c) Yami 2020-2022.</h6> </center>
+        <center> <h6>All rights reserved.</h6> </center>
+        
+    </div>
+    
+        </div>
+</body>
+
+</html> 
